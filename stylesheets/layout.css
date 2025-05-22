@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  background-color: #26262c;
 }
 body {
   width: 100vw;
@@ -10,6 +9,7 @@ body {
   font-family: 'Montserrat';
   position: relative;
   scroll-behavior: smooth;
+  background-color: #26262c;
 }
 :root {
   --white: #f3f4f9;
@@ -89,6 +89,7 @@ h3 {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   animation-delay: 0.5s;
+  z-index: 10;
 }
 @keyframes fadeIn {
   from {
@@ -141,7 +142,8 @@ h3 {
   background: url('../images/prisma.jpg') center center no-repeat;
   background-size: cover;
   opacity: 1;
-  transition: opacity 3s ease-in-out;
+  /* transition: opacity 3s ease-in-out; */
+  animation: fadeIn 3s ease alternate-reverse infinite;
 }
 .back404.active {
   opacity: 0;
