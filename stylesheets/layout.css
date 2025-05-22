@@ -7,4 +7,35 @@ body {
   display: block;
   margin: 0 auto;
   font-family: 'Montserrat';
+  position: relative;
+  scroll-behavior: smooth;
+}
+:root {
+  --white: #f3f4f9;
+  --grey: #8e8e94;
+  --grey-dark: #48494e;
+  --dark: #26262c;
+}
+h1 {
+  color: var(--white);
+  font-size: 213px;
+  line-height: 87%; /* 62.4px */
+  letter-spacing: -4.26px;
+  text-transform: uppercase;
+}
+h2 {
+  color: var(--white);
+  font-size: 48px;
+  line-height: 130%; /* 62.4px */
+  text-transform: uppercase;
+}
+a {
+  color: var(--white);
+}
+a:hover {
+  color: var(--grey);
+}
+
+a:visited {
+  color: var(--grey-dark);
 }
