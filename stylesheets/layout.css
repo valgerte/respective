@@ -74,12 +74,13 @@ h3 {
   text-transform: uppercase;
   width: fit-content;
 }
-/*404
+/*404*/
 .space-vertical-2 {
+  position: relative;
   display: flex;
   width: 100vw;
   height: 100vh;
-  padding: 2vh 2.5vw 0 48vw;  адаптивный отступ 
+  padding: 2vh 2.5vw 0 48vw; /*адаптивный отступ */
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -88,7 +89,6 @@ h3 {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   animation-delay: 0.5s;
-  z-index: 10;
 }
 @keyframes fadeIn {
   from {
@@ -104,7 +104,7 @@ h3 {
   align-items: flex-start;
   gap: 3vh;
 }
-/* Большая цифра 404 
+/* Большая цифра 404 */
 .numeral {
   font-size: 18vw;
   line-height: 78%;
@@ -112,7 +112,7 @@ h3 {
   text-transform: uppercase;
   color: var(--white);
 }
-/* Кнопка 
+/* Кнопка */
 #backBtn {
   text-decoration: none;
   font-size: 24px;
@@ -145,82 +145,4 @@ h3 {
 }
 .back404.active {
   opacity: 0;
-}*/
-/* ФОН */
-.back404 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('../images/prisma.jpg') center center no-repeat;
-  background-size: cover;
-  opacity: 1;
-  transition: opacity 3s ease-in-out;
-  z-index: 0; /* Позади текста */
-}
-.back404.active {
-  opacity: 0;
-}
-
-/* ОБЁРТКА ТЕКСТА */
-.space-vertical-2 {
-  position: relative; /* Добавлено — чтобы z-index сработал */
-  z-index: 1; /* Поверх фона */
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vh 2.5vw 0 48vw; /* адаптивный отступ */
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 6vh;
-  flex-shrink: 0;
-  opacity: 0;
-  animation: fadeIn 2s ease forwards;
-  animation-delay: 0.5s;
-}
-
-/* АНИМАЦИЯ ПОЯВЛЕНИЯ ТЕКСТА */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* ВНУТРЕННИЕ БЛОКИ */
-.space-vertical-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3vh;
-}
-.numeral {
-  font-size: 18vw;
-  line-height: 78%;
-  letter-spacing: -0.4vw;
-  text-transform: uppercase;
-  color: var(--white);
-}
-#backBtn {
-  text-decoration: none;
-  font-size: 24px;
-  line-height: 130%;
-  text-transform: uppercase;
-  display: flex;
-  height: 7vh;
-  padding: 0 1.5vw;
-  align-items: center;
-  gap: 1vw;
-  border-radius: 0.15vw;
-  color: var(--purple);
-  border: 0.1vw solid #a4b8ec;
-}
-#backBtn:hover {
-  border-radius: 0.3vw;
-  color: var(--white);
-  border: 0.1vw solid #f3f4f9;
 }
