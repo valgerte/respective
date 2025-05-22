@@ -19,23 +19,48 @@ body {
 h1 {
   color: var(--white);
   font-size: 213px;
-  line-height: 87%; /* 62.4px */
+  line-height: 87%;
   letter-spacing: -4.26px;
   text-transform: uppercase;
 }
 h2 {
   color: var(--white);
+  font-size: 128px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+h3 a {
+  color: var(--white);
+  text-decoration: none;
   font-size: 48px;
-  line-height: 130%; /* 62.4px */
+  line-height: 100%;
   text-transform: uppercase;
 }
 a {
   color: var(--white);
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
 }
 a:hover {
+  color: var(--grey-dark);
+}
+a:active {
   color: var(--grey);
 }
-
-a:visited {
-  color: var(--grey-dark);
+a.active {
+  color: var(--grey-dark); /* активная страница */
+}
+.header-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-left: 24px;
+}
+.header {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  margin-left: 14px;
 }
