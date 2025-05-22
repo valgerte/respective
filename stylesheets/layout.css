@@ -18,14 +18,14 @@ body {
   --dark: #26262c;
   --purple: #a4b8ec;
 }
-h1 {
+h1.main {
   color: var(--white);
   font-size: 213px;
   line-height: 87%;
   letter-spacing: -4.26px;
   text-transform: uppercase;
 }
-h2 {
+h1 {
   color: var(--white);
   font-size: 128px;
   line-height: 130%;
